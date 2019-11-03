@@ -7,6 +7,7 @@ use App\Book;
 use App\Enquiry;
 use App\Package;
 use App\Slider;
+use App\Contact;
 use App\User;
 use Session;
 use Illuminate\Http\Request;
@@ -30,7 +31,9 @@ class AdminController extends Controller
         $bookcount = $book->count();
         $enquiry = Enquiry::all();
         $enquirycount = $enquiry->count();
-        return view('admin.dashboard',compact('packagecount','usercount','blogcount','slidercount','bookcount','enquirycount'));
+        $contact= contact::all();
+        $contactcount= $contact->count();
+        return view('admin.dashboard',compact('packagecount','usercount','blogcount','slidercount','bookcount','enquirycount','contactcount'));
     }
 
     public function logout(){

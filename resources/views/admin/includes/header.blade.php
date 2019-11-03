@@ -33,8 +33,8 @@
                             <img src="{{asset('public/adminpanel/images/user5-128x128.jpg')}}" class="float-left rounded-circle" alt="User Image">
 
                             <p>
-                                
-                                <small class="mb-5">jb@gmail.com</small>
+                                {{Auth::user()->name}}
+                                <small class="mb-5">{{Auth::user()->email}}</small>
                             </p>
                         </li>
                         <!-- Menu Body -->

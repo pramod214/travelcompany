@@ -81,6 +81,18 @@
                     </div>
                 </a>
             </div>
+
+             <div class="col-xl-3 col-md-6 col-12">
+                <a href="{{route('enquiry.index')}}">
+                    <div class="box box-body bg-danger">
+                        <div class="flexbox">
+                            <div id="spark3"></div>
+                            <span class="font-size-40 font-weight-200">{{$contactcount}}</span>
+                        </div>
+                        <div class="text-right">Contact</div>
+                    </div>
+                </a>
+            </div>
             <!-- /.col -->
             <!-- /.col -->
         </div>
